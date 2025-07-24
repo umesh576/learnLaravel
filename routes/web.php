@@ -65,3 +65,7 @@ Route::get('/contact',[ContactController::class,'contactPage']);
 // ? about handel the route
 Route::view('/user-form','userForm');
 Route::post('/addUser',[FormController::class,'addUser']);
+
+// handel advance form like radio checkbox
+
+Route::view('/user-form1','userForm2');
