@@ -16,5 +16,14 @@
  <x-message-alert msg="User login sucessfully"/>
 
 
- 
+ <!-- passing class in component -->
+  <x-alert-meassage msg="something went wrong" class="warn"/>
+
+<style>
+
+    .warn{
+        background-color: yellow;
+    }
+
+</style>
 
