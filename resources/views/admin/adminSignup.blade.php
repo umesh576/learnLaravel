@@ -1,0 +1,1 @@
+<h1>this is admin signup page {{ $adminname }}</h1>

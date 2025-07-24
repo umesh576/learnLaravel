@@ -1,0 +1,31 @@
+all dependices are save on the vendero folder
+at app folder we can write the core code 
+
+
+how to make controller? 
+for making controller run the command or manullay inside app/http/controller
+
+php artisan make:controller UserController(controller name)
+
+
+how to make view
+
+view was making by two method manually or using command line
+php artisan make:view hello(view file name)
+
+for making the nested view page
+php artisan make:view admin.login (nestedFolder.viewfilename)
+
+
+subview =>
+subview is the same as view but it was attach with the another view 
+example => header is a another view but i was always attach with the every page or home page then header is consider as the subview
+
+componment =>
+componment are same as the react componment 
+how to make compnment 
+run this command:
+php artisan make:componment message(componment name)
+it can make two folder componment inside the view and and another view folrder at the root directory
+inside the View folder in root directory php file of the componment is made 
+inisde the views/compnment actual componment is made
