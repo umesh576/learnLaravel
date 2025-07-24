@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\BladeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FormController;
 
 Route::get('/', function () {
     return view('home');
@@ -59,3 +60,8 @@ Route::get('/', function () {
 
 Route::get('/about',[AboutController::class,'aboutPage']);
 Route::get('/contact',[ContactController::class,'contactPage']);
+
+
+// ? about handel the route
+Route::view('/user-form','userForm');
+Route::post('/addUser',[FormController::class,'addUser']);
