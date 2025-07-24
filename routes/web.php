@@ -6,6 +6,7 @@ use App\Http\Controllers\BladeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\formHandel2Controller;
 
 Route::get('/', function () {
     return view('home');
@@ -69,3 +70,4 @@ Route::post('/addUser',[FormController::class,'addUser']);
 // handel advance form like radio checkbox
 
 Route::view('/user-form1','userForm2');
+Route::post('/addUserDetails',[formHandel2Controller::class,'handelForm']);

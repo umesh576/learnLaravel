@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 class formHandel2Controller extends Controller
 {
     //
-    function handelForm(){
-        echo "you handling advance form";
+    function handelForm(Request $req){
+        // echo "you handling advance form";
+        // echo $req;
+        return $req;
         
     }
 }
