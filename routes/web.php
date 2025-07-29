@@ -9,6 +9,8 @@ use App\Http\Controllers\FormController;
 use App\Http\Controllers\formHandel2Controller;
 use App\Http\Controllers\AddUserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserProfileController;
+use App\Http\Middleware\checkAge;
 
 Route::get('/', function () {
     return view('home');
@@ -92,4 +94,23 @@ Route::view('/urlContact','url.contact')->name('uc');
 
 Route::get('/hello',[ProfileController::class, 'user']);
 
-Route::view('/user/profile/{name}','url.profile')->name('user');
+Route::view('/user/profile/{name}','url.profile');
+
+Route::get('/userProfile/{username}',[UserProfileController::class,'getUser']);
+
+
+
+//started learn about the middleware
+
+
+Route::view('middleHome','middlewarepage.home')->middleware('check1');
+Route::view('middleAbout','middlewarepage.about');
+
+
+// method of doing routing in many route
+// Route::middleware('check1')->group(
+//     function(){
+//         Route::view('middleHome','middlewarepage.home');
+// Route::view('home','middlewarepage.about');
+//     }
+// );
