@@ -31,5 +31,23 @@ inside the View folder in root directory php file of the componment is made
 inisde the views/compnment actual componment is made
 
 
+config database in my project 
+create database in phpmyadmin through xampp and make change in the .env file setion like this:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+
+SESSION_DRIVER=database
+SESSION_LIFETIME=120
+SESSION_ENCRYPT=false
+SESSION_PATH=/
+SESSION_DOMAIN=null 
+
+then run the command : php artisan migrate
+
+
 i stop the video at 3.14 and jump into the 3.21 3.42
 i stop the video at 4.0 and jump into the 3.21 3.42

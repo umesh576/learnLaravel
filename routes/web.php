@@ -11,6 +11,7 @@ use App\Http\Controllers\AddUserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Middleware\checkAge;
+use App\Http\Middleware\userAgeCheck;
 
 Route::get('/', function () {
     return view('home');
@@ -103,8 +104,8 @@ Route::get('/userProfile/{username}',[UserProfileController::class,'getUser']);
 //started learn about the middleware
 
 
-Route::view('middleHome','middlewarepage.home')->middleware('check1');
-Route::view('middleAbout','middlewarepage.about');
+// Route::view('middleHome','middlewarepage.home')->middleware('check1');
+// Route::view('middleAbout','middlewarepage.about');
 
 
 // method of doing routing in many route
@@ -114,3 +115,6 @@ Route::view('middleAbout','middlewarepage.about');
 // Route::view('home','middlewarepage.about');
 //     }
 // );
+
+Route::view('sinmiddlehome','middlewarepage.home')->middleware(userAgeCheck::class);
+Route::view('sinmiddleAbout','middlewarepage.about');
