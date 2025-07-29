@@ -76,3 +76,14 @@ Route::post('/addUserDetails',[formHandel2Controller::class,'handelForm']);
 
 Route::view('/addUserForm','AddUser');
 Route::post('/addUser2',[AddUserController::class,'addUser']);
+
+
+// url folder in view route are here 
+
+Route::view('/urlHome','url.home');
+
+
+Route::view('/urlAbout','url.about');
+
+
+Route::view('/urlContact','url.contact')->name('uc');
