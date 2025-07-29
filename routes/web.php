@@ -13,6 +13,7 @@ use App\Http\Controllers\UserProfileController;
 use App\Http\Middleware\checkAge;
 use App\Http\Middleware\userAgeCheck;
 use App\Http\Controllers\UserDb;
+use App\Http\Controllers\Showdatabase;
 
 Route::get('/', function () {
     return view('home');
@@ -124,3 +125,6 @@ Route::view('sinmiddleAbout','middlewarepage.about');
 
 // use database in project
 Route::get('user',[UserDb::class,'users']);
+
+// show database data using controller
+Route::get('/showData',[Showdatabase::class,'showDbData']);
