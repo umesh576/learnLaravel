@@ -8,6 +8,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\formHandel2Controller;
 use App\Http\Controllers\AddUserController;
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     return view('home');
@@ -87,3 +88,8 @@ Route::view('/urlAbout','url.about');
 
 
 Route::view('/urlContact','url.contact')->name('uc');
+
+
+Route::get('/hello',[ProfileController::class, 'user']);
+
+Route::view('/user/profile/{name}','url.profile')->name('user');

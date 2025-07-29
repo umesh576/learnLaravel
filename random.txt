@@ -31,4 +31,4 @@ inside the View folder in root directory php file of the componment is made
 inisde the views/compnment actual componment is made
 
 
-i stop the video at 3.14 and jump into the 3.21
+i stop the video at 3.14 and jump into the 3.21 3.42
