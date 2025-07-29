@@ -1,7 +1,7 @@
 <div>
     <!-- Nothing worth having comes easy. - Theodore Roosevelt -->
      <form action="/addUserDetails" method="post">
-        @csrf;
+        @csrf
         <div>
             <div>
 

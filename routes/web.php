@@ -7,6 +7,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\FormController;
 use App\Http\Controllers\formHandel2Controller;
+use App\Http\Controllers\AddUserController;
 
 Route::get('/', function () {
     return view('home');
@@ -71,3 +72,7 @@ Route::post('/addUser',[FormController::class,'addUser']);
 
 Route::view('/user-form1','userForm2');
 Route::post('/addUserDetails',[formHandel2Controller::class,'handelForm']);
+
+
+Route::view('/addUserForm','AddUser');
+Route::post('/addUser2',[AddUserController::class,'addUser']);
