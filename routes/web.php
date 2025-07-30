@@ -128,3 +128,9 @@ Route::get('user',[UserDb::class,'users']);
 
 // show database data using controller
 Route::get('/showData',[Showdatabase::class,'showDbData']);
+
+
+
+
+// satrting leran livewire 
+Route::view('livewire','NewLivewire.UseLivewire');
