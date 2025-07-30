@@ -137,3 +137,6 @@ Route::view('livewire','NewLivewire.UseLivewire');
 
 //live wire hook
 Route::view('/hook','LivewireHook');
+
+// nested compnment
+Route::view('/nestedComponent','showcomponmentparantandchild');
