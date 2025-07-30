@@ -134,3 +134,6 @@ Route::get('/showData',[Showdatabase::class,'showDbData']);
 
 // satrting leran livewire 
 Route::view('livewire','NewLivewire.UseLivewire');
+
+//live wire hook
+Route::view('/hook','LivewireHook');
