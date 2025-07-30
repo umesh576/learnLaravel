@@ -14,6 +14,7 @@ use App\Http\Middleware\checkAge;
 use App\Http\Middleware\userAgeCheck;
 use App\Http\Controllers\UserDb;
 use App\Http\Controllers\Showdatabase;
+use App\Http\Controllers\showstudent;
 
 Route::get('/', function () {
     return view('home');
@@ -140,3 +141,8 @@ Route::view('/hook','LivewireHook');
 
 // nested compnment
 Route::view('/nestedComponent','showcomponmentparantandchild');
+
+
+
+// starting learn model
+Route::get('/student',[showstudent::class,'viewStudentDetails']);
